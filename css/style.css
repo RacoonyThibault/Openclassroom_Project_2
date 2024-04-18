@@ -17,7 +17,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 50px;
 }
 
 ul {
@@ -46,6 +46,52 @@ body {
     justify-content: center;
     margin-top: 0;
 }
+
+.recherche-hebergement{
+    margin-bottom: 40px;
+
+}
+
+h1{
+    font-size:22px;
+    margin:0;
+}
+
+.sous-titre{
+    margin-top:0 ;
+}
+
+form{
+    display: flex;
+    padding: 0;
+}
+
+.bouton-localisation{
+    width: 50px;
+    height: 50px;
+    border-radius: 30% 0% 0% 30% / 20% 0% 0% 20%;
+    border: 1px  #d9d9d9;
+
+}
+input{
+    width: 150px;
+    height: 50px;
+    border: 1px #d9d9d9 solid;
+    font-weight: bold;
+    text-align: center;
+
+}
+
+.bouton-recherche {
+    color: white;
+    font-weight: bold;
+    background-color: #0065FC;
+    border: 1px  #0065FC;
+    width: 90px;
+    height: 50px;
+    border-radius:0% 20% 20% 0% / 0% 30% 30% 0% ;
+}
+
 
 .main-container {
     width: 100%;
