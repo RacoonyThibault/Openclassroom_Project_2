@@ -46,6 +46,7 @@ body {
     justify-content: center;
     margin-top: 0;
 }
+/** RECHERCHE **/
 
 .recherche-hebergement{
     margin-bottom: 40px;
@@ -53,12 +54,14 @@ body {
 }
 
 h1{
-    font-size:22px;
-    margin:0;
+    margin-bottom: 10px;
 }
 
-.sous-titre{
-    margin-top:0 ;
+h2{
+    font-weight: 400;
+    font-size: 15px ;
+    margin-top: 0;
+    margin-bottom: 20px;
 }
 
 form{
@@ -73,25 +76,99 @@ form{
     border: 1px  #d9d9d9;
 
 }
+
+.icone-localisation{
+    display: inline-block;
+    font-size: 20px;
+}
+
 input{
-    width: 150px;
+    width: 200px;
     height: 50px;
     border: 1px #d9d9d9 solid;
     font-weight: bold;
+    font-size: 17px;
     text-align: center;
 
 }
 
+.container-recherche{
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+
 .bouton-recherche {
     color: white;
     font-weight: bold;
-    background-color: #0065FC;
-    border: 1px  #0065FC;
-    width: 90px;
-    height: 50px;
-    border-radius:0% 20% 20% 0% / 0% 30% 30% 0% ;
+    width:130px;
+    height:50px;
+    padding: 15px 16px 15px 16px;
+    gap: 10px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px 0px 0px 0px;
+    border: 1px solid #0065FC;
+    background: #0065FC;
+}
+/** FILTRE **/
+
+.filtre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
+.margfiltre{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.titre-filtre{
+    margin-right: 20px;
+}
+
+.bouton-filtre{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icontextfiltre{
+    border: 3px solid #F2F2F2;
+    height: 50px;
+    width: auto;
+    border-radius: 30px;
+    background-color: inherit;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.filtreicone{
+    font-size: 25px;
+    padding-left:10px ;
+    padding-right: 10px ;
+}
+
+.filtretext{
+    font-weight:bold;
+    padding-right: 10px;
+
+}
+
+
+.icontextfiltre:hover{
+    background-color: #DEEBFF;
+    color: black;
+    opacity: 1;
+}
+
+
+
+
+
+/** MAIN **/
 
 .main-container {
     width: 100%;
