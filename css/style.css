@@ -34,6 +34,8 @@ li {
     display: flex;
     margin: 0px;
     padding: 15px;
+    font-size: large;
+    font-weight: 500;
 }
 
 li:hover {
@@ -43,8 +45,12 @@ li:hover {
 
 body {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin-top: 0;
+    margin-left: 20px;
+    margin-right: 50px;
+    padding: auto;
 }
 /** RECHERCHE **/
 
@@ -164,11 +170,39 @@ input{
     opacity: 1;
 }
 
+.pointinfo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+    
+}
 
+.iconeinfo{
+    font-size: 15px;
+    height: 24px;
+    width: 24px;
+    border: 1px solid #F2F2F2;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
 
-
+.textinfo{
+    font-weight: 350;
+}
 
 /** MAIN **/
+
+/**Hebergement**/
+
+
+
+
 
 .main-container {
     width: 100%;
