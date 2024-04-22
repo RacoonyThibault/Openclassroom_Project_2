@@ -55,7 +55,7 @@ body {
 /** RECHERCHE **/
 
 .recherche-hebergement{
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 
 }
 
@@ -64,8 +64,8 @@ h1{
 }
 
 h2{
-    font-weight: 400;
-    font-size: 15px ;
+    font-weight: 500;
+    font-size: 20px ;
     margin-top: 0;
     margin-bottom: 20px;
 }
@@ -160,6 +160,7 @@ input{
 .filtretext{
     font-weight:bold;
     padding-right: 10px;
+    font-size: 20px;
 
 }
 
@@ -175,7 +176,7 @@ input{
     flex-direction: row;
     align-items: center;
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 15px;
     
     
 }
@@ -193,15 +194,42 @@ input{
 }
 
 .textinfo{
-    font-weight: 350;
+    font-weight: 500;
 }
 
-/** MAIN **/
+                /** MAIN **/
 
 /**Hebergement**/
+.titreimportant{
+    font-size: 30px;
+    font-weight: bolder;
+}
 
 
 
+ .carte{
+    display: flex;
+    margin-right: 30px;
+}
+
+.carte{
+    box-sizing: border-box;
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    margin-bottom: 30px;
+    margin-right: 20px;
+}
+
+.carte-hebergements .imagecarte {
+    width: 250px;
+    height: 34%;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.carte .imagecarte{
+    object-fit: cover;
+}
 
 
 .main-container {
