@@ -54,28 +54,22 @@ body {
 }
 /** RECHERCHE **/
 
-.recherche-hebergement{
+.hebergements-search{
     margin-bottom: 25px;
 
 }
 
-h1{
+.search-title{
     margin-bottom: 10px;
 }
 
-h2{
-    font-weight: 500;
-    font-size: 20px ;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
 
 form{
     display: flex;
     padding: 0;
 }
 
-.bouton-localisation{
+.localisation-button{
     width: 50px;
     height: 50px;
     border-radius: 30% 0% 0% 30% / 20% 0% 0% 20%;
@@ -83,8 +77,7 @@ form{
 
 }
 
-.icone-localisation{
-    display: inline-block;
+.localisation-icon{
     font-size: 20px;
 }
 
@@ -95,52 +88,49 @@ input{
     font-weight: bold;
     font-size: 17px;
     text-align: center;
-
 }
 
-.container-recherche{
+.search-button{
+    background: #0065FC;
+    color: white;
+    font-size:17px;
+    font-weight: bold;
+    width:130px;
+    height:50px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px solid #0065FC;
+}
+
+.container-search{
     margin-top: 40px;
     margin-bottom: 40px;
 
 }
 
-
-.bouton-recherche {
-    color: white;
-    font-weight: bold;
-    width:130px;
-    height:50px;
-    padding: 15px 16px 15px 16px;
-    gap: 10px;
-    border-radius: 0px 15px 15px 0px;
-    border: 1px 0px 0px 0px;
-    border: 1px solid #0065FC;
-    background: #0065FC;
-}
 /** FILTRE **/
 
-.filtre{
+.filter{
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.margfiltre{
+.margfilter{
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.titre-filtre{
+.filter-title{
     margin-right: 20px;
 }
 
-.bouton-filtre{
+.filter-button{
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icontextfiltre{
+.icontextfilter{
     border: 3px solid #F2F2F2;
     height: 50px;
     width: auto;
@@ -151,13 +141,13 @@ input{
     align-items: center;
 }
 
-.filtreicone{
+.filtericone{
     font-size: 25px;
     padding-left:10px ;
     padding-right: 10px ;
 }
 
-.filtretext{
+.filtertext{
     font-weight:bold;
     padding-right: 10px;
     font-size: 20px;
@@ -165,13 +155,13 @@ input{
 }
 
 
-.icontextfiltre:hover{
+.icontextfilter:hover{
     background-color: #DEEBFF;
     color: black;
     opacity: 1;
 }
 
-.pointinfo{
+.info-point{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -181,7 +171,7 @@ input{
     
 }
 
-.iconeinfo{
+.icon-info{
     font-size: 15px;
     height: 24px;
     width: 24px;
@@ -193,60 +183,59 @@ input{
     margin-right: 10px;
 }
 
-.textinfo{
+.text-info{
     font-weight: 500;
 }
 
                 /** MAIN **/
 
 /**Hebergement**/
-.titreimportant{
+
+
+section.hebergements{
+    margin-right: 50px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hebergements-title{
     font-size: 22px;
     font-weight: bolder;
     margin-top: 5px;
     margin-bottom: 25px;
 }
 
-.hebergements-and-populaires{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
 
-.carte-hebergements{
+.hebergements-cards{
     display: flex;
     flex-direction: row;
-    align-items: center;
     flex-wrap: wrap;
 }
 
+.card{
+    margin-right: 30px;
+}
 
-.carte{
+.hebergements .card{
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
     width: 250px;
     height: 200px;
-    background-color: white;
-    border-radius: 20px;
     margin-bottom: 30px;
-    margin-right: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    
 }
 
-.carte-hebergements .imagecarte {
+.hebergements-cards .image-card {
     width: 100%;
     height: 50%;
     border-radius: 20px 20px 0px 0px;
-}
-
-.carte .imagecarte{
-    object-fit: cover;
+    
 }
 
 
-.cartetext .titrecarte {
+.card-text .card-title {
     margin-top:10px;
     margin-bottom: 13px;
     margin-left: 13px;
@@ -255,14 +244,14 @@ input{
     font-size: 17px;
 }
 
-.cartetext .soustitrecarte{
+.card-text .card-subtitle{
     margin-top:0px;
     margin-bottom: 10px;
     margin-left: 13px;
     padding: 0;
 }
 
-.notecarte{
+.card-rating{
     margin-left: 13px;
 }
 
@@ -321,9 +310,7 @@ a {
 }
 
 /****** Hebergements ***********/
-.hebergements {
-    width: 65%;
-}
+
 
 /****** Populaires ***********/
 .populaires {
