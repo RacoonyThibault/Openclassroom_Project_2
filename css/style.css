@@ -17,8 +17,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .main-container {
@@ -33,9 +32,15 @@ a {
     text-decoration: none;
 }
 
-.section-title {
-    margin: 0;
+
+h2{
+    font-weight: 700;
     font-size: 22px;
+    margin: 0;
+}
+
+p{
+    margin: 0;
 }
 
 .card {
@@ -71,22 +76,29 @@ header{
     width: 100%;
 }
 
-nav{
+.nav-container{
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 50px;
 }
 
-
-
-header ul{
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    margin-top: 0;
+.logo{
+    width:30%;
+    height:30%;
 }
 
+nav ul{
+    display: flex;
+}
+
+nav ul li{
+    display: flex;
+    width: 50%;
+    padding: 0px 0px 15px 15px;
+    justify-content: center;
+}
+ 
 li:hover {
     border-top: 2px solid #0065FC;
     }
@@ -101,23 +113,25 @@ li:hover {
 }
 
 
-.search-and-filter h1{
-    font-size: large;
-    margin-top: 0;
+.headline-and-text h1{
+    font-size: 22px;
+    font-weight: 700;
 }
 
-.search-and-filter p{
-    font-size: medium;
-    margin: 0;
+.headline-and-text h2{
+    font-size: 16px;
+    font-weight: 400;
 }
+
 form{
     display: flex;
+    max-width: 377px;
 }
 
 .localisation-button{
     width: 50px;
     height: 50px;
-    border-radius: 30% 0% 0% 30% / 20% 0% 0% 20%;
+    border-radius: 15px 0px 0px 15px;
     border: 1px  #d9d9d9;
 }
 
@@ -126,11 +140,11 @@ form{
 }
 
 #search-bar{
-    width: 200px;
+    width: 50%;
     height: 50px;
     border: 1px #d9d9d9 solid;
-    font-weight: bold;
-    font-size: 17px;
+    font-weight: 700;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -139,7 +153,7 @@ form{
     color: white;
     font-size:17px;
     font-weight: bold;
-    width:130px;
+    width:35%;
     height:50px;
     border-radius: 0px 15px 15px 0px;
     border: 1px solid #0065FC;
@@ -155,41 +169,41 @@ form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 60%;
+    width: 56%;
+    gap: 15px;
 }
 
 .filter-title{
-    margin-right: 20px;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.button-container{
+    display: flex;
+    gap: 15px;
 }
 
 .filter-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    max-width: var(--container);
-}
-
-.icontextfilter{
-    border: 3px solid #F2F2F2;
+    border: 2px solid #F2F2F2;
     height: 50px;
-    max-width: 150px;
-    border-radius: 30px;
+    max-width: 180px;
+    gap: 10px;
+    border-radius: 25px;
+    padding: 4px 19px 4px 19px;
     background-color: inherit;
     display: flex;
     align-items: center;
 }
 
-.filtericone{
-    font-size: 25px;
-    padding-left:10px ;
-    padding-right: 10px ;
+.icon-filter{
+    font-size: 22px;
 }
 
-.filtertext{
-    font-weight:bold;
-    padding-right: 10px;
-    font-size: 20px;
+
+.filter-text{
+    font-weight:700;
+    font-size: 16px;
 }
 
 
@@ -199,12 +213,11 @@ form{
     opacity: 1;
 }
 
-.info-point{
+.info-bar{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 0px;
-    margin-bottom: 15px;
+    gap: 10px;
 }
 
 .icon-info{
@@ -216,13 +229,17 @@ form{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 10px;
+}
+
+.text-info{
+    margin: 0;
 }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    gap: 40px;
 }
 
 .hebergements-and-populaires section {
@@ -234,23 +251,17 @@ form{
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+    width: 66%;
+    gap: 30px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between
+    justify-content: space-between;
 }
 
-.hebergements-title{
-    font-size: 22px;
-    font-weight: bolder;
-    margin-top: 5px;
-    margin-bottom: 25px;
-}
 
 .card-first-line {
     display: flex;
     gap: 30px;
-    margin-bottom: 30px;
 }
 
 .card-second-line{
@@ -261,12 +272,12 @@ form{
 .hebergements .card{
     display: flex;
     flex-direction: column;
-    width: 26%;
+    width: 100%;
 }
 
 .image-hebergements {
     width: 100%;
-    height: 80px;
+    height: 124px;
     border-radius: 20px 20px 0px 0px;
 }
 
@@ -274,14 +285,18 @@ form{
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-left: 5px;
-    padding-bottom: 5px;
+    padding: 15px 15px 15px 15px;
+    gap: 8px;
 }
+
+.card-subtitle{
+    font-size: 14px;
+}
+
 
 #show-more{
     font-size: 16px;
     font-weight: bold;
-    margin-top: 20px;
 }
 
 /****** Populaires ***********/
@@ -332,6 +347,7 @@ form{
 /** Activities**/
 
 .activities{
+    padding: 30px;
     height: 500px;
 }
 
@@ -412,14 +428,12 @@ footer li{
     .filter{
         flex-direction: column;
         align-items: flex-start;
-
+        width: 72%;
     }
 
-    .filter-button{
-
+    .filter-text{
+        font-size: 15px;
     }
-
-
 
     .hebergements-and-populaires {
         flex-direction: column;
@@ -455,12 +469,73 @@ footer li{
 }
 
 /* Small devices (phones, less than 768px) */
-@media (max-width: 767.98px) {
-    /* ... */
+@media (min-width:320px) and (max-width: 767.98px) {
+
+    /** main **/
+    .main-container{
+        padding: 0;
+    }
+
+    /**Header**/
+
+    .nav-container{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .logo{
+        padding: 30px;
+        text-align: center;
+    }
+
+    .links{
+        width: 100%;
+        border-bottom: 2px solid #DEEBFF;
+    }
+
+    header ul{
+        width: 100%;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+
+    nav ul li{
+        padding: 0px 0px 15px 0px;
+        border-bottom: 2px solid #DEEBFF;
+    }
+
+    header ul li:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+    }
+
+    /** search-and-filter**/
+
+
+    .search-and-filter{
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+    }
+
+
+    .headline-and-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    form{
+        width: 100%;
+    }
+
+
+    .search-bar{
+        width: 100%;
+    }
 
 
     .search-button{
-        width: 10%;
+        width: 20%;
         border-radius: 20px;
         margin-left: -15px;
     }
@@ -476,12 +551,17 @@ footer li{
     .filter{
         flex-direction: column;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
 
     .filter-button{
         flex-wrap: wrap;
         justify-content: center;
         width: 100px;
+    }
+
+    .icontextfilter{
+        width: 100%;
     }
 
     .hebergements-and-populaires {

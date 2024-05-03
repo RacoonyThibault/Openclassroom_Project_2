@@ -18,22 +18,26 @@
     <div class="main-container">
         <header>
             <nav>
-                <div class="logo"><a href="index.html">
-                    <img src="images/logo/Booki.png" alt="logo du site booki" width="60%" height="60%"></a>
-                </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="#hebergements">Hébergements</a></li>
-                        <li><a href="">Activités</a></li>
-                    </ul>
+                <div class="nav-container">
+                    <div class="logo"><a href="index.html">
+                        <img src="images/logo/Booki.png" alt="logo du site booki ecran" width="61px" height="19px"></a>
+                    </div>
+                        <ul>
+                            <li>
+                                <a href="#hebergements">Hébergements</a>
+                            </li>
+                            <li>
+                                <a href="#activities">Activités</a>
+                            </li>
+                        </ul>
                 </div>
             </nav>
         </header>
         <main>
             <section class="search-and-filter">
                 <div class="headline-and-text">
-                    <h1>Trouvez votre hébergements pour des vacances de rêve</h1>
-                    <p>En plein centre ville ou en pleine nature</p>
+                    <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+                    <h2>En plein centre ville ou en pleine nature</h2>
                 </div>
                     <form action="" method="post">
                         <button class="localisation-button">
@@ -48,26 +52,34 @@
                         <div class="filter-title">
                             <h3>Filtres</h3>
                         </div>
-                        <div class="filter-button">
-                            <button class="icontextfilter economique">
-                                    <i class="fa-solid fa-money-bill-wave filtericone"></i>
-                                <div class="filtertext">Économique</div>
+                        <div class="button-container">
+                            <button class="filter-button economique">
+                                    <div class="icon-filter">
+                                        <i class="fa-solid fa-money-bill-wave"></i>
+                                    </div>
+                                <div class="filter-text">Économique</div>
                             </button>
-                            <button class="icontextfilter familial">
-                                    <i class="fa-solid fa-person filtericone"></i>
-                                <div class="filtertext">Familial</div>
+                            <button class="filter-button familial">
+                                <div class="icon-filter">
+                                    <i class="fa-solid fa-person"></i>
+                                    </div>
+                                <div class="filter-text">Familial</div>
                             </button>
-                            <button class="icontextfilter romantique">
-                                    <i class="fa-solid fa-heart filtericone"></i>
-                                <div class="filtertext">Romantique</div>
+                            <button class="filter-button romantique">
+                                <div class="icon-filter">
+                                    <i class="fa-solid fa-heart"></i>
+                                    </div>
+                                <div class="filter-text">Romantique</div>
                             </button>
-                            <button class="icontextfilter pepite">
-                                    <i class="fa-solid fa-fire filtericone"></i>
-                                <div class="filtertext">Nos pépites</div>
-                            </button> 
+                            <button class="filter-button pepite">
+                                <div class="icon-filter">
+                                    <i class="fa-solid fa-fire"></i>
+                                    </div>
+                                <div class="filter-text">Nos pépites</div>
+                            </button>
                         </div>
                     </div>
-                    <div class="info-point">
+                    <div class="info-bar">
                         <i class="fa-solid fa-info icon-info"></i>
                         <p class="text-info">Plus de 500 logements sont disponible dans cette ville</p>
                     </div>
@@ -79,10 +91,8 @@
                         <a href="#" class="card">
                                 <img src="images/hebergements/fred-kleber.jpg" alt="photo de la chambre Hôtel du port" class="image-hebergements">
                                 <div class="card-contain">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel du port</h3>
+                                        <h2 class="card-title">Hôtel du port</h2>
                                         <p class="card-subtitle">Nuit à partir de 52<span class="euro">€</span></p>
-                                    </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -95,10 +105,8 @@
                         <a href="#" class="card">
                                 <img src="images/hebergements/febrian-zakaria.jpg" alt="photo de la chambre Hôtel chez Amina " class="image-hebergements">
                                 <div class="card-contain">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel Chez Amina</h3>
+                                        <h2 class="card-title">Hôtel Chez Amina</h2>
                                         <p class="card-subtitle">Nuit à partir de 96<span class="euro">€</span></p>
-                                    </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -111,10 +119,8 @@
                         <a href="#" class="card">
                                 <img src="images/hebergements/reisetopia.jpg" alt="photo de la chambre Hôtel Les mouettes" class="image-hebergements">
                                 <div class="card-contain">
-                                    <div class="card-text">
-                                        <h3 class="card-title">Hôtel Les mouettes</h3>
+                                        <h2 class="card-title">Hôtel Les mouettes</h2>
                                         <p class="card-subtitle">Nuit à partir de 76<span class="euro">€</span></p>
-                                    </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -129,48 +135,42 @@
                         <a href="#" class="card">
                             <img src="images/hebergements/annie-spratt.jpg" alt="photo de la chambre Hôtel de la mer" class="image-hebergements">
                             <div class="card-contain">
-                                <div class="card-text">
-                                    <h3 class="card-title">Hôtel de la mer</h3>
+                                    <h2 class="card-title">Hôtel de la mer</h2>
                                     <p class="card-subtitle">Nuit à partir de 46<span class="euro">€</span></p>
-                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </a>
                         <a href="#" class="card">
                             <img src="images/hebergements/marcus-loke.jpg" alt="photo de la chambre Auberge de la Canebière" class="image-hebergements">
                             <div class="card-contain">
-                                <div class="card-text">
-                                    <h3 class="card-title">Auberge La Canebière</h3>
+                                    <h2 class="card-title">Auberge La Canebière</h2>
                                     <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </a>
                         <a href="#" class="card">
                             <img src="images/hebergements/nicate-lee.jpg" alt="photo de la chambre Auberge Le Panier" class="image-hebergements">
                             <div class="card-contain">
-                                <div class="card-text">
-                                    <h3 class="card-title">Auberge Le Panier</h3>
+                                    <h2 class="card-title">Auberge Le Panier</h2>
                                     <p class="card-subtitle">Nuit à partir de 25<span class="euro">€</span></p>
-                                </div>
                                 <div class="card-rating">
                                     <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
-                                <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                    <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
                                 </div>
                             </div>
                         </a>
