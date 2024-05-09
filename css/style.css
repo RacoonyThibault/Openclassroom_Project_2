@@ -83,9 +83,8 @@ header{
     margin-bottom: 50px;
 }
 
-.logo{
-    width:30%;
-    height:30%;
+.logo-site{
+    width: 30%;
 }
 
 nav ul{
@@ -135,7 +134,7 @@ form{
     border: 1px  #d9d9d9;
 }
 
-.localisation-icon{
+form .fa-solid{
     font-size: 20px;
 }
 
@@ -196,12 +195,12 @@ form{
     align-items: center;
 }
 
-.icon-filter{
+.button-container .fa-solid{
     font-size: 22px;
 }
 
 
-.filter-text{
+.button-container .filter-button{
     font-weight:700;
     font-size: 16px;
 }
@@ -438,7 +437,7 @@ footer li{
         align-items: flex-start;
     }
 
-    .filter-text{
+    .button-container .filter-button{
         font-size: 15px;
     }
 
@@ -601,11 +600,11 @@ footer li{
         width: 47%;
     }
 
-    .icon-filter{
+    .button-container .fa-solid{
         font-size: 20px;
     }
 
-    .filter-text{
+    .button-container .filter-button{
         font-size: 12px;
     }
 
@@ -642,9 +641,12 @@ footer li{
 
     }
 
+    .populaires-cards a{
+        width: 100%;
+    }
+
     .populaires-cards article.card{
         flex-wrap: wrap;
-        width: 265px;
     }
 
     /** Activities**/
