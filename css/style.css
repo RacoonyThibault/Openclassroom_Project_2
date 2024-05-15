@@ -197,6 +197,10 @@ form .fa-solid{
     align-items: center;
 }
 
+.filter-button:hover{
+    background-color: #DEEBFF;
+}
+
 .button-container .fa-solid{
     font-size: 22px;
 }
@@ -208,11 +212,6 @@ form .fa-solid{
 }
 
 
-.icontextfilter:hover{
-    background-color: #DEEBFF;
-    color: black;
-    opacity: 1;
-}
 
 .info-bar{
     display: flex;
